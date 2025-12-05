@@ -7,7 +7,7 @@ test.describe('Dynamic Iterative Validation of The Internet Herokuapp', () => {
     // 1. Navigate to the Target URL
     await page.goto('/');
     console.log('Navigated to Base URL');
-
+ 
     // 2. Identify ALL links on the homepage
     // We target the list items in the main content area
     const links = await page.$$eval('#content ul li a', (anchors) => {
